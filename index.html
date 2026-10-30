@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Rahmat Hidayat — Computer Engineering graduate focused on software development, machine learning, and cloud technology." />
+  <meta name="author" content="Rahmat Hidayat" />
+  <meta name="theme-color" content="#f5f7fa" />
+  <title>Rahmat Hidayat — Software & Machine Learning</title>
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+  <!-- Open Graph / social sharing -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Rahmat Hidayat — Software & Machine Learning" />
+  <meta property="og:description" content="Computer Engineering graduate building web applications, APIs, and machine learning solutions. Open to opportunities in software engineering, ML, and cloud." />
+  <meta property="og:image" content="assets/og-image.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Rahmat Hidayat — Software & Machine Learning" />
+  <meta name="twitter:description" content="Computer Engineering graduate building web applications, APIs, and machine learning solutions." />
+  <meta name="twitter:image" content="assets/og-image.jpg" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Rahmat Hidayat",
+    "jobTitle": "Software Engineer",
+    "email": "mailto:rahmat90104@gmail.com",
+    "telephone": "+6285782006746",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Cikembar, Sukabumi",
+      "addressRegion": "Jawa Barat",
+      "addressCountry": "ID"
+    },
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Universitas Kebangsaan Republik Indonesia"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/in/rahmat-hidayat2",
+      "https://github.com/Rahmathidayat11"
+    ],
+    "knowsAbout": [
+      "Software Development",
+      "Machine Learning",
+      "Cloud Computing",
+      "Python",
+      "OpenCV",
+      "Web Application Development"
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-glow" aria-hidden="true"></div>
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="#home" class="logo">RH<span>.</span></a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact" class="nav-cta">Contact</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="home">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <p class="hero-badge reveal"><span class="dot"></span> Open to opportunities</p>
+          <h1 class="reveal">
+            Hi, I'm <span class="gradient-text">Rahmat Hidayat</span>
+          </h1>
+          <p class="hero-role reveal">
+            <span id="typedRole">Software Engineer</span><span class="cursor">|</span>
+          </p>
+          <p class="hero-desc reveal">
+            Computer Engineering graduate with a strong interest in software development,
+            machine learning, and cloud technology. I build web applications, APIs, and
+            data-driven solutions that solve real problems.
+          </p>
+
+          <div class="hero-actions reveal">
+            <a href="#projects" class="btn btn-primary">
+              View Projects
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a href="assets/Rahmat-Hidayat-CV.pdf" download class="btn btn-ghost">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>
+              Download CV
+            </a>
+            <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+          </div>
+
+          <div class="hero-socials reveal">
+            <a href="https://github.com/Rahmathidayat11" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.9 5.33.9 11.6c0 4.9 3.17 9.06 7.57 10.53.55.1.75-.24.75-.53v-2.07c-3.08.67-3.73-1.3-3.73-1.3-.5-1.28-1.23-1.62-1.23-1.62-1-.68.08-.67.08-.67 1.1.08 1.68 1.13 1.68 1.13.98 1.69 2.58 1.2 3.2.92.1-.72.39-1.2.7-1.48-2.46-.28-5.05-1.23-5.05-5.47 0-1.21.43-2.2 1.13-2.98-.11-.28-.49-1.4.11-2.92 0 0 .92-.3 3.02 1.13a10.5 10.5 0 0 1 5.5 0c2.1-1.43 3.02-1.13 3.02-1.13.6 1.52.22 2.64.11 2.92.7.78 1.13 1.77 1.13 2.98 0 4.25-2.6 5.19-5.06 5.46.4.35.75 1.03.75 2.08v3.08c0 .3.2.64.76.53a11.1 11.1 0 0 0 7.56-10.53C23.1 5.33 18.27.5 12 .5Z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/rahmat-hidayat2" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14ZM7.12 20.45H3.55V9h3.57v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0Z"/></svg>
+            </a>
+            <a href="mailto:rahmat90104@gmail.com" aria-label="Email">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="m3 7 9 6 9-6"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal" aria-hidden="true">
+          <div class="orb-card">
+            <div class="orb-ring"></div>
+            <div class="orb-core">
+              <span class="mono">&lt;/&gt;</span>
+            </div>
+            <div class="float-chip chip-1">Python</div>
+            <div class="float-chip chip-2">Machine Learning</div>
+            <div class="float-chip chip-3">OpenCV</div>
+            <div class="float-chip chip-4">Cloud</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="stats reveal">
+          <div class="stat"><strong>3.82</strong><span>GPA / 4.00</span></div>
+          <div class="stat"><strong>2+</strong><span>Featured Projects</span></div>
+          <div class="stat"><strong>3 mo</strong><span>Industry Internship</span></div>
+          <div class="stat"><strong>1</strong><span>Org. Co-Founder</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="section" id="about">
+      <div class="container">
+        <p class="section-label reveal">01 — About</p>
+        <h2 class="section-title reveal">Turning ideas into working software</h2>
+
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              I'm a Computer Engineering graduate from Universitas Kebangsaan Republik Indonesia
+              with a strong interest in <strong>software development</strong>,
+              <strong>machine learning</strong>, and <strong>cloud technology</strong>.
+            </p>
+            <p>
+              My experience spans web application and API development, as well as applying
+              machine learning concepts to real software solutions — from predicting production
+              output with Random Forest to detecting audiences in real time with computer vision.
+            </p>
+            <p>
+              I enjoy solving problems analytically, learning quickly, and collaborating
+              effectively both independently and within a team.
+            </p>
+          </div>
+
+          <aside class="info-card reveal">
+            <div class="info-row">
+              <span>Location</span>
+              <p>Cikembar, Sukabumi, Jawa Barat</p>
+            </div>
+            <div class="info-row">
+              <span>Email</span>
+              <p><a href="mailto:rahmat90104@gmail.com">rahmat90104@gmail.com</a></p>
+            </div>
+            <div class="info-row">
+              <span>Phone</span>
+              <p><a href="tel:+6285782006746">+62 857-8200-6746</a></p>
+            </div>
+            <div class="info-row">
+              <span>Focus</span>
+              <p>Software Engineering · ML · Cloud</p>
+            </div>
+            <div class="info-row">
+              <span>Status</span>
+              <p class="status-open"><i></i> Open to work</p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section class="section" id="skills">
+      <div class="container">
+        <p class="section-label reveal">02 — Skills</p>
+        <h2 class="section-title reveal">Tools &amp; technologies I work with</h2>
+
+        <div class="skills-grid">
+          <article class="skill-card reveal">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m8 8-5 4 5 4M16 8l5 4-5 4M14 4l-4 16"/></svg>
+            </div>
+            <h3>Programming &amp; AI</h3>
+            <ul class="tag-list">
+              <li>Python</li>
+              <li>Machine Learning</li>
+              <li>Random Forest</li>
+              <li>Deep Learning</li>
+              <li>OpenCV</li>
+              <li>Computer Vision</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 3.8 5.6 3.8 9S14.5 18.5 12 21c-2.5-2.5-3.8-5.6-3.8-9S9.5 5.5 12 3Z"/></svg>
+            </div>
+            <h3>Web &amp; API</h3>
+            <ul class="tag-list">
+              <li>Web Application</li>
+              <li>API Development</li>
+              <li>REST API</li>
+              <li>Database</li>
+              <li>Data Management</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19a4.5 4.5 0 0 0 .5-8.97A6.5 6.5 0 0 0 5.2 11 4 4 0 0 0 6 19h11.5Z"/></svg>
+            </div>
+            <h3>Cloud &amp; Systems</h3>
+            <ul class="tag-list">
+              <li>Cloud Technology</li>
+              <li>LED / Videotron Systems</li>
+              <li>Colorlight &amp; LEDVision</li>
+              <li>Hardware Setup</li>
+              <li>Troubleshooting</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EXPERIENCE ===== -->
+    <section class="section" id="experience">
+      <div class="container">
+        <p class="section-label reveal">03 — Experience</p>
+        <h2 class="section-title reveal">Where I've grown</h2>
+
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-head">
+                <div>
+                  <h3>Internship — Digital Display Engineering</h3>
+                  <p class="company">Urban Visual Media · Bandung</p>
+                </div>
+                <span class="period">Sep 2025 — Dec 2025</span>
+              </div>
+              <p class="timeline-desc">
+                A company specializing in LED displays, videotrons, and digital signage —
+                covering installation, configuration, content management, and maintenance.
+              </p>
+              <ul class="bullet-list">
+                <li>Assisted with installation, configuration, and troubleshooting of LED Display and Videotron systems.</li>
+                <li>Developed a real-time gender and age detection system using Python, OpenCV, and deep learning models.</li>
+                <li>Configured LED displays with Colorlight controllers and LEDVision — pixel mapping, resolution, brightness, and display settings.</li>
+                <li>Supported field technicians with hardware installation, cabling, power supply checks, and display synchronization.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-head">
+                <div>
+                  <h3>Co-Founder — Robotic UKRI</h3>
+                  <p class="company">Universitas Kebangsaan Republik Indonesia · Bandung</p>
+                </div>
+                <span class="period">Sep 2024 — Present</span>
+              </div>
+              <p class="timeline-desc">
+                A student organization focused on robotics, programming, and technology
+                development through collaborative projects, training, and technical activities.
+              </p>
+              <ul class="bullet-list">
+                <li>Developed and organized learning materials for robotics and programming to support member training.</li>
+                <li>Collaborated on technical activities to help members build practical skills.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+
+        <article class="edu-card reveal">
+          <div class="edu-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5"/></svg>
+          </div>
+          <div class="edu-body">
+            <div class="edu-head">
+              <div>
+                <h3>Bachelor's Degree — Informatics Engineering</h3>
+                <p class="company">Universitas Kebangsaan Republik Indonesia · Bandung</p>
+              </div>
+              <span class="period">Jul 2022 — Sep 2026</span>
+            </div>
+            <p class="edu-desc">
+              Graduated with a GPA of <strong>3.82 / 4.00</strong>. Completed various projects
+              in software development, web applications, APIs, and machine learning.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <p class="section-label reveal">04 — Projects</p>
+        <h2 class="section-title reveal">Selected work</h2>
+
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="project-visual visual-kayuku">
+              <span class="project-index">01</span>
+              <img
+                src="assets/Kayuku.png"
+                alt="Kayuku dashboard showing stock, revenue, and production recommendations"
+                class="project-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="project-body">
+              <div class="project-top">
+                <h3>Kayuku</h3>
+                <span class="project-type">Web App · Machine Learning</span>
+              </div>
+              <p>
+                A web-based wood production management application that integrates a Random
+                Forest model to predict production output based on log dimensions and wood
+                characteristics.
+              </p>
+              <ul class="project-features">
+                <li>Production data management &amp; wood volume calculation</li>
+                <li>Financial tracking and demand forecasting</li>
+                <li>ML-driven production output prediction</li>
+              </ul>
+              <ul class="tag-list tag-list-sm">
+                <li>Python</li>
+                <li>Random Forest</li>
+                <li>Web App</li>
+                <li>Database</li>
+              </ul>
+              <div class="project-actions">
+                <button class="project-link" type="button" data-modal="modal-kayuku">
+                  View details
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </button>
+                <a href="https://github.com/Rahmathidayat11/kayuku" target="_blank" rel="noopener" class="project-repo">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.9 5.33.9 11.6c0 4.9 3.17 9.06 7.57 10.53.55.1.75-.24.75-.53v-2.07c-3.08.67-3.73-1.3-3.73-1.3-.5-1.28-1.23-1.62-1.23-1.62-1-.68.08-.67.08-.67 1.1.08 1.68 1.13 1.68 1.13.98 1.69 2.58 1.2 3.2.92.1-.72.39-1.2.7-1.48-2.46-.28-5.05-1.23-5.05-5.47 0-1.21.43-2.2 1.13-2.98-.11-.28-.49-1.4.11-2.92 0 0 .92-.3 3.02 1.13a10.5 10.5 0 0 1 5.5 0c2.1-1.43 3.02-1.13 3.02-1.13.6 1.52.22 2.64.11 2.92.7.78 1.13 1.77 1.13 2.98 0 4.25-2.6 5.19-5.06 5.46.4.35.75 1.03.75 2.08v3.08c0 .3.2.64.76.53a11.1 11.1 0 0 0 7.56-10.53C23.1 5.33 18.27.5 12 .5Z"/></svg>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-visual visual-smartads">
+              <span class="project-index">02</span>
+              <img
+                src="assets/iklan.png"
+                alt="Smart Ads application detecting audience gender and age in real time"
+                class="project-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="project-body">
+              <div class="project-top">
+                <h3>Smart Ads</h3>
+                <span class="project-type">AI · Computer Vision</span>
+              </div>
+              <p>
+                An AI-powered advertising system that detects faces and estimates audience
+                gender and age in real time, then selects and displays relevant ads on LED
+                displays based on demographics.
+              </p>
+              <ul class="project-features">
+                <li>Real-time face detection &amp; demographic estimation</li>
+                <li>Automated ad selection based on audience data</li>
+                <li>Integrated with LED display playback systems</li>
+              </ul>
+              <ul class="tag-list tag-list-sm">
+                <li>Python</li>
+                <li>OpenCV</li>
+                <li>Deep Learning</li>
+                <li>Automation</li>
+              </ul>
+              <div class="project-actions">
+                <button class="project-link" type="button" data-modal="modal-smartads">
+                  View details
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </button>
+                <span class="project-repo">Internship · 2025</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="projects-more reveal">
+          <a href="https://github.com/Rahmathidayat11" target="_blank" rel="noopener" class="btn btn-ghost">
+            More on GitHub
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact-card reveal">
+          <p class="section-label">05 — Contact</p>
+          <h2>Let's build something together</h2>
+          <p class="contact-desc">
+            I'm currently open to opportunities in software engineering, machine learning,
+            and cloud computing. Feel free to reach out — I'd love to hear from you.
+          </p>
+
+          <div class="contact-actions">
+            <a href="mailto:rahmat90104@gmail.com" class="btn btn-primary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="m3 7 9 6 9-6"/></svg>
+              rahmat90104@gmail.com
+            </a>
+            <a href="assets/Rahmat-Hidayat-CV.pdf" download class="btn btn-ghost">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>
+              Download CV
+            </a>
+            <a href="https://www.linkedin.com/in/rahmat-hidayat2" target="_blank" rel="noopener" class="btn btn-ghost">
+              LinkedIn
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+          </div>
+
+          <div class="contact-footer">
+            <a href="tel:+6285782006746">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg>
+              +62 857-8200-6746
+            </a>
+            <span class="sep">•</span>
+            <span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              Cikembar, Sukabumi, Jawa Barat
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== PROJECT DETAIL MODALS ===== -->
+  <div class="modal" id="modal-kayuku" role="dialog" aria-modal="true" aria-labelledby="kayukuTitle" aria-hidden="true">
+    <div class="modal-overlay" data-close></div>
+    <div class="modal-card">
+      <button class="modal-close" type="button" aria-label="Close dialog" data-close>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
+
+      <p class="modal-label">Project 01</p>
+      <h2 id="kayukuTitle">Kayuku</h2>
+      <p class="modal-sub">Web-based wood production management with machine learning</p>
+
+      <div class="modal-meta">
+        <div><span>Type</span><p>Web Application</p></div>
+        <div><span>Focus</span><p>Production &amp; ML</p></div>
+        <div><span>Repository</span><p><a href="https://github.com/Rahmathidayat11/kayuku" target="_blank" rel="noopener">kayuku ↗</a></p></div>
+      </div>
+
+      <div class="modal-section">
+        <h3>Overview</h3>
+        <p>
+          A web-based application for managing wood production, integrating a Random Forest
+          model to predict production output based on log dimensions and wood characteristics.
+          The system also covers production data management, wood volume calculation, financial
+          tracking, and demand forecasting to support more efficient, data-driven operations.
+        </p>
+      </div>
+
+      <div class="modal-section">
+        <h3>Key Features</h3>
+        <ul class="bullet-list">
+          <li>Production data management and wood volume calculation</li>
+          <li>Financial tracking for production operations</li>
+          <li>Demand forecasting to support business decisions</li>
+          <li>Machine learning prediction of production output using Random Forest</li>
+        </ul>
+      </div>
+
+      <div class="modal-section">
+        <h3>Tech Stack</h3>
+        <ul class="tag-list">
+          <li>Python</li>
+          <li>Random Forest</li>
+          <li>Web Application</li>
+          <li>Database</li>
+        </ul>
+      </div>
+
+      <div class="modal-foot">
+        <a href="https://github.com/Rahmathidayat11/kayuku" target="_blank" rel="noopener" class="btn btn-primary">
+          View Repository
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg>
+        </a>
+        <button type="button" class="btn btn-ghost" data-close>Close</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-smartads" role="dialog" aria-modal="true" aria-labelledby="smartadsTitle" aria-hidden="true">
+    <div class="modal-overlay" data-close></div>
+    <div class="modal-card">
+      <button class="modal-close" type="button" aria-label="Close dialog" data-close>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
+
+      <p class="modal-label">Project 02</p>
+      <h2 id="smartadsTitle">Smart Ads</h2>
+      <p class="modal-sub">AI-based audience detection &amp; automated advertising</p>
+
+      <div class="modal-meta">
+        <div><span>Type</span><p>AI / Computer Vision</p></div>
+        <div><span>Context</span><p>Internship</p></div>
+        <div><span>Year</span><p>2025</p></div>
+      </div>
+
+      <div class="modal-section">
+        <h3>Overview</h3>
+        <p>
+          An AI-powered Smart Ads system built during an internship at Urban Visual Media.
+          It uses Python and OpenCV to detect faces and estimate audience gender and age in
+          real time, then integrates the results with an automated advertising player to
+          display relevant ads on LED displays based on audience demographics.
+        </p>
+      </div>
+
+      <div class="modal-section">
+        <h3>What It Does</h3>
+        <ul class="bullet-list">
+          <li>Detects faces and estimates audience demographics in real time</li>
+          <li>Hands detection results to an automated ad selection flow</li>
+          <li>Displays targeted advertisements on LED display systems</li>
+          <li>Connects software detection with digital signage playback</li>
+        </ul>
+      </div>
+
+      <div class="modal-section">
+        <h3>Tech Stack</h3>
+        <ul class="tag-list">
+          <li>Python</li>
+          <li>OpenCV</li>
+          <li>Deep Learning</li>
+          <li>Automation</li>
+        </ul>
+      </div>
+
+      <div class="modal-section">
+        <h3>Note</h3>
+        <p>Developed as part of an internship at Urban Visual Media; the source code is not publicly available.</p>
+      </div>
+
+      <div class="modal-foot">
+        <a href="https://github.com/Rahmathidayat11" target="_blank" rel="noopener" class="btn btn-ghost">
+          GitHub Profile
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg>
+        </a>
+        <button type="button" class="btn btn-ghost" data-close>Close</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Rahmat Hidayat. Built with care.</p>
+      <div class="footer-links">
+        <a href="https://github.com/Rahmathidayat11" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/rahmat-hidayat2" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:rahmat90104@gmail.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
